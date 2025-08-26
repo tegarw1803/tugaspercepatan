@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Akhir - Website</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .site-title {
+            color: #4a5568;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4a5568;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        /* Main Layout */
+        .main-layout {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        main {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        aside {
+            flex: 1;
+            min-width: 250px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Article Styles */
+        article {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        article h2 {
+            color: #4a5568;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        article p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        /* Aside Image */
+        .aside-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .aside-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        /* Footer Styles */
+        footer {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .footer-info {
+            text-align: left;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            color: #4a5568;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: #667eea;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-layout {
+                flex-direction: column;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                justify-content: center;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .footer-info {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <div class="header-content">
+                <h1 class="site-title">🌐 Tugas Website</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#about">Tentang</a></li>
+                        <li><a href="#services">Elemen</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <div class="main-layout">
+            <!-- Main Content -->
+            <main id="home">
+                <article>
+                    <h2>Selamat Datang di Website responsif sederhana</h2>
+                    <p>Website ini dibuat sebagai bagian dari tugas percepatan pemrograman web mobile.</p>
+                    <p>Website ini menerapkan konsep semantic HTML dan teknik flexbox untuk membuat layout yang responsif dan modern.</p>
+                </article>
+
+                <article id="about">
+                    <h2>Teknologi yang Digunakan</h2>
+                    <p>Dalam pembuatan website ini, saya menggunakan:</p>
+                    <ul>
+                        <li>HTML5 untuk struktur yang bermakna</li>
+                        <li>CSS3 untuk styling dan layout</li>
+                        <li>JavaScript untuk interaktivitas</li>
+                    </ul>
+                </article>
+
+                <article id="services">
+                    <h2>Elemen-Elemen Penting dalam website ini adalah:</h2>
+                    <p>✅ Header dengan judul dan navigasi</p>
+                    <p>✅ Main content area dengan artikel</p>
+                    <p>✅ Aside dengan gambar menggunakan elemen img</p>
+                    <p>✅ Footer dengan informasi kontak</p>
+                    <p>✅ Layout menggunakan flexbox (bukan float)</p>
+                    <p>✅ Semantic HTML yang tepat</p>
+                    <p>✅ Responsive design</p>
+                </article>
+            </main>
+
+            <!-- Aside Section -->
+            <aside>
+                <h3>Gambar Diri</h3>
+                <div class="aside-image">
+                    <img src="images/profile.jpg" alt="Foto Diri" />
+                </div>
+                <p>Nama: Tegar Arif W</p>
+                <p>Nim: 215410143</p>
+                <p>program studi: informatika</p>
+            </aside>
+        </div>
+
+        <!-- Footer Section -->
+        <footer id="contact">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Website Tugas </h3>
+                    <p>Dibuat untuk memenuhi tugas percepatan pemrograman web mobile.</p>
+                    <p>© 2025 - Tegar Arif W</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>

@@ -39,6 +39,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap; /* Menambahkan flex-wrap untuk responsivitas */
         }
 
         .site-title {
@@ -51,6 +52,7 @@
             display: flex;
             list-style: none;
             gap: 30px;
+            flex-wrap: wrap; /* Menambahkan flex-wrap untuk responsivitas */
         }
 
         nav a {
@@ -72,6 +74,7 @@
             display: flex;
             gap: 30px;
             margin-bottom: 30px;
+            flex-wrap: wrap; /* Menambahkan flex-wrap untuk responsivitas */
         }
 
         main {
@@ -160,20 +163,20 @@
         /* Responsive Design */
         @media (max-width: 768px) {
             .main-layout {
-                flex-direction: column;
+                flex-direction: column; /* Mengubah arah layout menjadi kolom */
             }
             
             .header-content {
-                flex-direction: column;
+                flex-direction: column; /* Mengubah arah header menjadi kolom */
                 text-align: center;
             }
             
             nav ul {
-                justify-content: center;
+                justify-content: center; /* Menyelaraskan navigasi di tengah */
             }
             
             .footer-content {
-                flex-direction: column;
+                flex-direction: column; /* Mengubah arah footer menjadi kolom */
                 text-align: center;
             }
             
@@ -256,3 +259,4 @@
         </footer>
     </div>
 </body>
+</html>
